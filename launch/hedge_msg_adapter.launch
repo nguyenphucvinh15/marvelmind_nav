@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="marvelmind_nav" type="hedge_msg_adapter" name="hedge_msg_adapter" clear_params="true">
+    <rosparam command="load" file="$(find marvelmind_nav)/params/covariances.yaml" />
+  </node>
+</launch>
